@@ -11,7 +11,7 @@ $TTL    604800
 @        IN      NS      services.tek.local.
 
 ;IP Address for Name Server
-services.tek.local.          IN      A       192.168.1.57
+services.tek.local.          IN      A       192.168.1.210
 
 ;Mail Server MX (Mail exchanger) Record
 tek.local.   IN   MX   10   mail.tek.local.
