@@ -1,0 +1,37 @@
+$TTL    604800
+@       IN      SOA     services.tek.local. admin.tek.local. (
+                  1     ; Serial
+             604800     ; Refresh
+              86400     ; Retry
+            2419200     ; Expire
+             604800     ; Minimum
+)
+
+;Name Server Information
+@        IN      NS      services.tek.local.
+
+;IP Address for Name Server
+services.tek.local.          IN      A       192.168.1.57
+
+;Mail Server MX (Mail exchanger) Record
+tek.local.   IN   MX   10   mail.tek.local.
+ 
+; A Record for bootstrap node
+bs.web.tek.local.        IN      A      192.168.1.200
+
+; A Record for control plane nodes
+cp1.web.tek.local.         IN      A      192.168.1.201
+cp2.web.tek.local.         IN      A      192.168.1.202
+cp3.web.tek.local.         IN      A      192.168.1.203
+
+; A Record for worker nodes
+wn1.web.tek.local.        IN      A      192.168.1.204
+wn2.web.tek.local.        IN      A      192.168.1.205
+
+; A Record for OpenShift Kubernetes API and Load balancer
+api.web.tek.local.        IN    A    192.168.1.1
+api-int.web.tek.local.    IN    A    192.168.1.1
+*.apps.web.tek.local.     IN    A    192.168.1.1
+
+;CNAME Record
+ftp    IN     CNAME   www.tek.local.
