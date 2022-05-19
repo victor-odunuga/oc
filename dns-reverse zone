@@ -8,10 +8,10 @@ $TTL 86400
 )
 ;Name Server Information
 @ IN NS services.tek.local.
-services     IN      A       192.168.1.57
+services     IN      A       192.168.1.210
 
 ;Reverse lookup for Name Server
-57   IN   PTR   services.tek.local.
+210   IN   PTR   services.tek.local.
 
 ;PTR Record for bootstrap node
 200    IN    PTR    bs.web.tek.local.
@@ -26,7 +26,5 @@ services     IN      A       192.168.1.57
 205    IN    PTR   wn2.web.tek.local.
 
 ;PTR Record for OpenShift Kubernetes API and Load balancer
-1    IN    PTR   api.web.tek.local.
-1    IN    PTR   api-init.web.tek.local.
-1    IN    PTR   api-int.lab.ocp.lan.
-
+210    IN    PTR   api.web.tek.local.
+210    IN    PTR   api-init.web.tek.local.
