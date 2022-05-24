@@ -11,27 +11,27 @@ $TTL    604800
 @        IN      NS      services.tek.local.
 
 ;IP Address for Name Server
-services.tek.local.          IN      A       192.168.1.210
+services.tek.local.          IN      A       192.168.22.206
 
 ;Mail Server MX (Mail exchanger) Record
 tek.local.   IN   MX   10   mail.tek.local.
  
 ; A Record for bootstrap node
-bs.web.tek.local.        IN      A      192.168.1.200
+bs.web.tek.local.        IN      A      192.168.22.200
 
 ; A Record for control plane nodes
-cp1.web.tek.local.         IN      A      192.168.1.201
-cp2.web.tek.local.         IN      A      192.168.1.202
-cp3.web.tek.local.         IN      A      192.168.1.203
+cp1.web.tek.local.         IN      A      192.168.22.201
+cp2.web.tek.local.         IN      A      192.168.22.202
+cp3.web.tek.local.         IN      A      192.168.22.203
 
 ; A Record for worker nodes
-wn1.web.tek.local.        IN      A      192.168.1.204
-wn2.web.tek.local.        IN      A      192.168.1.205
+wn1.web.tek.local.        IN      A      192.168.22.204
+wn2.web.tek.local.        IN      A      192.168.22.205
 
 ; A Record for OpenShift Kubernetes API and Load balancer
-api.web.tek.local.        IN    A    192.168.1.1
-api-int.web.tek.local.    IN    A    192.168.1.1
-*.apps.web.tek.local.     IN    A    192.168.1.1
+api.web.tek.local.        IN    A    192.168.22.206
+api-int.web.tek.local.    IN    A    192.168.22.206
+*.apps.web.tek.local.     IN    A    192.168.22.206
 
 ;CNAME Record
 ftp    IN     CNAME   www.tek.local.
